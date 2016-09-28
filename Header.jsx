@@ -1,4 +1,4 @@
-// this is the styled Header
+﻿// this is the styled Header
 import React from 'react';
 
 class Header extends React.Component {
@@ -14,8 +14,8 @@ class Header extends React.Component {
   render (){
     return (
       <div>
-        <div className = "logo" data-src = {this.state.logo} propsWidth = "100">
-          {this.props.Width}
+        <div className = "logo" data-src = {this.state.logo} >
+          {this.props.Width}{this.props.Height}
         </div>
       </div>
     )
@@ -23,7 +23,7 @@ class Header extends React.Component {
 
 }
 Header.defaultProps = {
-  "Width" : 100,
-  "heigh" : 45
+  "Width" : 150,
+  "Height" : 45
 }
 export default Header;
