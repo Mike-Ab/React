@@ -16,6 +16,7 @@ class Header extends React.Component {
       <div>
         <div className = "logo" data-src = {this.state.logo} >
           {this.props.Width}{this.props.Height}
+          <img src={this.state.logo} width={this.props.Width}></img>
         </div>
       </div>
     )

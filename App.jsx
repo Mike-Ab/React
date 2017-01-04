@@ -19,8 +19,10 @@ class App extends React.Component {
   render (){
     return (
       <div className = {this.state.fluid ? 'container-fluid' : 'container'}>
-        
+
      <Header Width={100} Height = {452}>
+
+        <Header Width="200">
         </Header>
         <SideMenu />
         <h3>{this.state.mystate}</h3>
