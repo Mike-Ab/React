@@ -5,6 +5,11 @@ import Footer from "../components/layout/Footer";
 import Nav from "../components/layout/Nav";
 
 export default class Layout extends React.Component {
+
+  codeNavigate() {
+    // this.props.location.pushState(`/#/settings`);
+  }
+
   render() {
     const { location } = this.props;
     const containerStyle = {
@@ -19,8 +24,8 @@ export default class Layout extends React.Component {
         <div class="container" style={containerStyle}>
           <div class="row">
             <div class="col-lg-12">
-              <h1>KillerNews.net</h1>
-
+              <h1>CatchRouter</h1>
+              <a onClick={this.codeNavigate.bind(this)}>Settings</a>
               {this.props.children}
 
             </div>

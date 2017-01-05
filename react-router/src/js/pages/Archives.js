@@ -16,8 +16,6 @@ export default class Archives extends React.Component {
       "Still More",
       "Fake Article",
       "Partial Article",
-      "American Article",
-      "Mexican Article",
     ].map((title, i) => <Article key={i} title={title}/> );
 
     return (
